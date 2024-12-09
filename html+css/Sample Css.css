@@ -1,0 +1,13 @@
+.mybox {
+    border-style: solid;
+    border-color: brown;
+    background-color: yellow;
+    text-align: center;
+}
+
+.mybox3 {
+    border-bottom: 3px solid rgb(163, 165, 42); 
+}
+.mybox4 {
+    border-bottom: 3px solid rgb(163, 165, 42); 
+}

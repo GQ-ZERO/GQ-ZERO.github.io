@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gridC">
+        <div class="gridI2">A</div>
+        <div class="gridI">B1</div>
+        <div class="gridI">B2</div>
+        <div class="gridI">B3</div>
+        <div class="gridI">B4</div>
+    </div>
+    <style>
+        .gridC {
+            background-color: rgb(255, 255, 255);
+            width: 400px;
+            height: 400px;
+            display: grid;
+            justify-content: end;
+            grid-template-columns: auto auto;
+            padding: 10px;
+            gap: 10px;
+        }
+        .gridI {
+            background-color: rgb(37, 125, 201);
+            border-style: solid;
+            justify-content: end;
+            grid-template-columns:  auto auto;
+            border-width: 0.5px;
+        }
+        .gridI2 {
+            background-color: rgb(197, 21, 21);
+            border-style: solid;
+            border-width: 0.5px;
+        }
+        .gridD {
+            background-color: rgb(255, 255, 255);
+            width: 200px;
+            height: 100px;
+            display: grid;
+            padding: 10px;
+            gap: 10px;
+        }
+    </style>
+</body>
+</html>

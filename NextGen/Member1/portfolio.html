@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+    <button id="scrollTopBtn">Top</button>
+
+  <header id="header">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="content">
+      <h1>Sup!!! Welcome to my portforlio website</h1>
+      <p>You can see my skills something about me and my contact</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-content">
+      <div class="image">
+        <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/356823873_665019859010429_3229007352783648381_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGnUWLb1zGV2VhARsR4_saChk9mjSxsnVmGT2aNLGydWUkJTgEmjb2I8Hc7lWkKUTBqO1JjkhlNL81zMuhlkD-E&_nc_ohc=knkfTUQPQlAQ7kNvgE7fmxl&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Apiu96lIHqC-VJZiTm94gek&oh=00_AYBnsVerVzUMNDKsHmUbVFN2rSSoDcf7b5KsfxKOTZ-1pQ&oe=6759D177" alt="รูปภาพของฉัน">
+      </div>
+      <div class="text">
+        <h2>About Me</h2>
+        <h3>I'm Thanetphon Thipphibal</h3>
+        <p>
+            I used to create robots, but I became bored with that field. Now, 
+            I’ve shifted my focus to web development as a way to expand my 
+            skills towards cybersecurity. Additionally, I have many other skills 
+            that are not related to computer engineering . You can see them out 
+            in the Skills page. Let's go to Skills page!!!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div>
+        <h2 class="skills-head">My Skills</h2>
+    </div>
+    <div class="skills-content">
+      <div class="skill-box">
+        <h3>Make Robots</h3>
+        <p>ผมชำนาญในการทำหุ่นอยู๋สองด้านคือ หุ่นยนต์sumoกับหุ่นยนต์Linetag
+            ผมสามารถทำได้ตั้งแต่ออกแบบโครงสร้าง สร้างหุ่นยนต์ขึ้นมา เขียนโค้ด
+            ให้มันทำงานตามที่ต้องการและประยุกต์พลิกแพลงในงานแข่งได้
+        </p>
+      </div>
+      <div class="skill-box">
+        <h3>Music</h3>
+        <p>ผมสามารถเล่นเครื่องดนตรีได้หลายเครื่องมาก ไม่ว่าจะเป็นเปียโน กีตาร์
+            เบส กลอง ทรอมโบน คาฮอง แต่ที่เล่นบ่อยสุดจะเป็นเปียโน รองลงมา
+            คือกีตาร์และคาฮอง ถึงช่วงนี้ผมจะไม่ได้เล่นหลายเดือนแล้วก็เถอะ
+        </p>
+      </div>
+      <div class="skill-box">
+        <h3>Sports</h3>
+        <p>เหมือนกับดนตรีผมสามารถเล่นกีฬาได้หลายอย่าง ไม่ว่าจะเป็น บาส
+            บอล แบต เปตอง กรีฑา และก็อื่นๆที่จำไม่ได้แล้วว่าเคยเล่นอะไรบ้าง
+            และกีฬาที่ผมชำนาญที่สุดคือบาสและกรีฑา ที่เหลือเฉลี่ยๆกันเพราะผม
+            เล่นไปเรื่อย
+        </p>
+      </div>
+      <div class="skill-box">
+        <h3>Create a website</h3>
+        <p>ซึ่งเป็นความสามารถที่ผมพึ่งได้เรียนรู้มาสดๆร้อนๆ
+            พึ่งจะฝึกได้2วันแท้ๆ แต่ต้องมาทำเว็บไซต์portfolio
+            ของตัวเองแบบนี้แล้ว พี่ๆสตาฟwebโหดร้ายมากครับ
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-content">
+      <p>IG: gq_zero</p>
+      <p>FB: Thanetphon Jansuwan</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+  background-color: #444;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #333; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 20px; 
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #555; 
+  color: #fff; 
+  transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+#home .content {
+  text-align: center;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+#about .image img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+#about .text {
+  width: 55%;
+}
+
+/* ความสามารถ */
+#skills {
+  padding: 50px 20px;
+  background-color: #e0e0e0;
+}
+
+.skills-head {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#skills .skills-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#skills .skill-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#skills .skill-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#skills .skill-box p {
+  font-size: 16px;
+}
+
+#contact {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-content {
+    display: inline;
+}
+
+#contact .contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#about .image img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#home {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#home .content {
+  transition: transform 0.1s ease-out;
+}
+
+
+  </style>
+
+  <script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.addEventListener("mousemove", (e) => {
+  const homeContent = document.querySelector("#home .content");
+  const { clientX: x, clientY: y } = e;
+
+  homeContent.style.transform = `translate(${x * 0.01}px, ${y * 0.01}px)`;
+});
+
+  </script>
+
+</body>
+</html>

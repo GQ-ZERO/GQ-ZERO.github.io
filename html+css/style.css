@@ -1,0 +1,19 @@
+h1 {
+    color: aqua;
+}
+p{
+    color: brown;
+}
+#firstname {
+    color: black;
+}
+#lastname {
+    color: blue;
+}
+* {
+    background-color: bisque;
+}
+p.loveyou {
+    background-color: pink;
+    color: blueviolet;
+}
