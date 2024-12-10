@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>portfolio</title>
 </head>
 <body>
 
@@ -85,10 +85,18 @@
 
   <section id="contact">
     <div class="contact-content">
-      <p>IG: gq_zero</p>
-      <p>FB: Thanetphon Jansuwan</p>
+      <a href="https://youtube.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="YouTube" class="contact-icon">
+      </a>
+      <a href="https://instagram.com/gq_zero" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="contact-icon">
+      </a>
+      <a href="https://discord.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968823.png" alt="Discord" class="contact-icon">
+      </a>
     </div>
   </section>
+  
 
   <script src="script.js"></script>
   <style>
@@ -220,19 +228,26 @@ nav ul li a:hover {
 }
 
 #skills .skills-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* เปลี่ยนการเรียงเป็นแนวตั้ง */
+  gap: 30px; /* เพิ่มช่องว่างระหว่างกล่อง */
+  max-width: 800px; /* กำหนดความกว้างสูงสุดของกล่อง */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
 }
 
 #skills .skill-box {
   background-color: white;
-  padding: 20px;
+  padding: 30px; /* เพิ่มความหนาของ padding */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 18px; /* ขยายขนาดตัวอักษร */
+}
+
+#skills .skill-box:hover {
+  transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อชี้ */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* เพิ่มแสงเงา */
 }
 
 #skills .skill-box h3 {
@@ -260,6 +275,23 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
+.contact-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
 h1, h2, h3 {
   color: #333;
 }
